@@ -1,0 +1,250 @@
+/* Gaya Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+/* Panel Kontrol */
+.control-panel {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-pause-all,
+.btn-unpause-all {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-pause-all {
+  background: #f59e0b;
+  color: white;
+}
+
+.btn-unpause-all {
+  background: #10b981;
+  color: white;
+}
+
+.btn-pause-all:hover,
+.btn-unpause-all:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid PS */
+.ps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.ps-item {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+/* Tambahkan di bagian .ps-item select */
+.ps-item select:disabled {
+    background: #f1f5f9;
+    cursor: not-allowed;
+}
+
+.ps-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ps-item h3 {
+  color: #2563eb;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.ps-item select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.timer {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: #dc2626;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.action-buttons button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-start {
+  background: #10b981;
+  color: white;
+}
+
+.btn-pause {
+  background: #f59e0b;
+  color: white;
+}
+
+.btn-stop {
+  background: #ef4444;
+  color: white;
+}
+
+.action-buttons button:hover {
+  filter: brightness(1.1);
+}
+
+.action-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Ringkasan Pembayaran */
+.payment-summary {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+}
+
+.payment-summary h3 {
+  color: #1e293b;
+  font-size: 1.2rem;
+}
+
+#total-payment {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.btn-reset {
+  background: #64748b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-reset:hover {
+  background: #475569;
+}
+
+/* Responsif */
+@media (max-width: 1024px) {
+  .ps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .control-panel {
+    flex-direction: column;
+  }
+
+  .payment-summary {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    margin: 0;
+  }
+}

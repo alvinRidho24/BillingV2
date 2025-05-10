@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing PS Gaming</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🎮 Billing PS Gaming</h1>
+      <nav>
+        <a href="./index.html">🎮 PS</a>
+        <a href="./fooddrink.html">🍔 Makanan</a>
+        <a href="./history.html">📜 History</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="control-panel">
+        <button id="pauseAll" class="btn-pause-all">⏸️ Pause Semua</button>
+        <button id="unpauseAll" class="btn-unpause-all">
+          ▶️ Lanjutkan Semua
+        </button>
+      </div>
+
+      <div class="ps-grid">
+        <!-- TV 1 -->
+        <div class="ps-item" data-id="tv1">
+          <h3>📺 TV 1</h3>
+          <select>
+            <option value="10" data-price="0">10 Menit - Free</option>
+            <option value="30" data-price="5000">30 Menit - Rp5.000</option>
+            <option value="60" data-price="9000">1 Jam - Rp9.000</option>
+            <option value="90" data-price="14000">1.5 Jam - Rp14.000</option>
+            <option value="120" data-price="18000">2 Jam - Rp18.000</option>
+            <option value="150" data-price="23000">2.5 Jam - Rp23.000</option>
+            <option value="180" data-price="27000">3 Jam - Rp27.000</option>
+          </select>
+          <div class="timer">00:00</div>
+          <div class="action-buttons">
+            <button class="btn-start">🚀 Mulai</button>
+            <button class="btn-pause" disabled>⏸️ Pause</button>
+            <button class="btn-stop" disabled>❌ Stop</button>
+          </div>
+        </div>
+
+        <!-- TV 2 -->
+        <div class="ps-item" data-id="tv2">
+          <h3>📺 TV 2</h3>
+          <select>
+            <option value="10" data-price="0">10 Menit - Free</option>
+            <option value="30" data-price="5000">30 Menit - Rp5.000</option>
+            <option value="60" data-price="9000">1 Jam - Rp9.000</option>
+            <option value="90" data-price="14000">1.5 Jam - Rp14.000</option>
+            <option value="120" data-price="18000">2 Jam - Rp18.000</option>
+            <option value="150" data-price="23000">2.5 Jam - Rp23.000</option>
+            <option value="180" data-price="27000">3 Jam - Rp27.000</option>
+          </select>
+          <div class="timer">00:00</div>
+          <div class="action-buttons">
+            <button class="btn-start">🚀 Mulai</button>
+            <button class="btn-pause" disabled>⏸️ Pause</button>
+            <button class="btn-stop" disabled>❌ Stop</button>
+          </div>
+        </div>
+
+        <!-- TV 3 -->
+        <div class="ps-item" data-id="tv3">
+          <h3>📺 TV 3</h3>
+          <select>
+            <option value="10" data-price="0">10 Menit - Free</option>
+            <option value="30" data-price="5000">30 Menit - Rp5.000</option>
+            <option value="60" data-price="9000">1 Jam - Rp9.000</option>
+            <option value="90" data-price="14000">1.5 Jam - Rp14.000</option>
+            <option value="120" data-price="18000">2 Jam - Rp18.000</option>
+            <option value="150" data-price="23000">2.5 Jam - Rp23.000</option>
+            <option value="180" data-price="27000">3 Jam - Rp27.000</option>
+          </select>
+          <div class="timer">00:00</div>
+          <div class="action-buttons">
+            <button class="btn-start">🚀 Mulai</button>
+            <button class="btn-pause" disabled>⏸️ Pause</button>
+            <button class="btn-stop" disabled>❌ Stop</button>
+          </div>
+        </div>
+
+        <!-- TV 4 -->
+        <div class="ps-item" data-id="tv4">
+          <h3>📺 TV 4</h3>
+          <select>
+            <option value="10" data-price="0">10 Menit - Free</option>
+            <option value="30" data-price="5000">30 Menit - Rp5.000</option>
+            <option value="60" data-price="9000">1 Jam - Rp9.000</option>
+            <option value="90" data-price="14000">1.5 Jam - Rp14.000</option>
+            <option value="120" data-price="18000">2 Jam - Rp18.000</option>
+            <option value="150" data-price="23000">2.5 Jam - Rp23.000</option>
+            <option value="180" data-price="27000">3 Jam - Rp27.000</option>
+          </select>
+          <div class="timer">00:00</div>
+          <div class="action-buttons">
+            <button class="btn-start">🚀 Mulai</button>
+            <button class="btn-pause" disabled>⏸️ Pause</button>
+            <button class="btn-stop" disabled>❌ Stop</button>
+          </div>
+        </div>
+
+        <!-- Baris Kedua (3 PS) -->
+        <!-- TV 5 -->
+        <div class="ps-item" data-id="tv5">
+          <h3>📺 TV 5</h3>
+          <select>
+            <option value="10" data-price="0">10 Menit - Free</option>
+            <option value="30" data-price="5000">30 Menit - Rp5.000</option>
+            <option value="60" data-price="9000">1 Jam - Rp9.000</option>
+            <option value="90" data-price="14000">1.5 Jam - Rp14.000</option>
+            <option value="120" data-price="18000">2 Jam - Rp18.000</option>
+            <option value="150" data-price="23000">2.5 Jam - Rp23.000</option>
+            <option value="180" data-price="27000">3 Jam - Rp27.000</option>
+          </select>
+          <div class="timer">00:00</div>
+          <div class="action-buttons">
+            <button class="btn-start">🚀 Mulai</button>
+            <button class="btn-pause" disabled>⏸️ Pause</button>
+            <button class="btn-stop" disabled>❌ Stop</button>
+          </div>
+        </div>
+
+        <!-- TV 6 -->
+        <div class="ps-item" data-id="tv6">
+          <h3>📺 TV 6</h3>
+          <select>
+            <option value="10" data-price="0">10 Menit - Free</option>
+            <option value="30" data-price="5000">30 Menit - Rp5.000</option>
+            <option value="60" data-price="9000">1 Jam - Rp9.000</option>
+            <option value="90" data-price="14000">1.5 Jam - Rp14.000</option>
+            <option value="120" data-price="18000">2 Jam - Rp18.000</option>
+            <option value="150" data-price="23000">2.5 Jam - Rp23.000</option>
+            <option value="180" data-price="27000">3 Jam - Rp27.000</option>
+          </select>
+          <div class="timer">00:00</div>
+          <div class="action-buttons">
+            <button class="btn-start">🚀 Mulai</button>
+            <button class="btn-pause" disabled>⏸️ Pause</button>
+            <button class="btn-stop" disabled>❌ Stop</button>
+          </div>
+        </div>
+
+        <!-- PS4 -->
+        <div class="ps-item" data-id="ps4">
+          <h3>🎮 PS4</h3>
+          <select>
+            <option value="10" data-price="0">10 Menit - Free</option>
+            <option value="30" data-price="5000">30 Menit - Rp7.000</option>
+            <option value="60" data-price="9000">1 Jam - Rp13.000</option>
+            <option value="90" data-price="14000">1.5 Jam - Rp20.000</option>
+            <option value="120" data-price="18000">2 Jam - Rp26.000</option>
+            <option value="150" data-price="23000">2.5 Jam - Rp33.000</option>
+            <option value="180" data-price="27000">3 Jam - Rp39.000</option>
+          </select>
+          <div class="timer">00:00</div>
+          <div class="action-buttons">
+            <button class="btn-start">🚀 Mulai</button>
+            <button class="btn-pause" disabled>⏸️ Pause</button>
+            <button class="btn-stop" disabled>❌ Stop</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="payment-summary">
+        <h3>💵 Total Pembayaran: <span id="total-payment">Rp0</span></h3>
+        <button class="btn-reset" onclick="resetAll()">🔄 Reset Semua</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
